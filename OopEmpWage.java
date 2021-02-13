@@ -24,6 +24,7 @@ public class OopEmpWage {
     public static void dailyWage() {
         int wagePerHr = 20;
         int fullDayHr = 8;
+        int workingDayPerMonth=20;
         empcheck();
        switch (isPresent){
            case 1:
@@ -34,9 +35,9 @@ public class OopEmpWage {
            break;
        }
         int dailyWage = wagePerHr*fullDayHr;
-        System.out.println("Daliywage is : "+dailyWage);
-
-
+        System.out.println("Dailywage is : "+dailyWage);
+        int Salary = workingDayPerMonth*dailyWage;
+        System.out.println(Salary+ " : is monthly salary");
     }
 
 }
