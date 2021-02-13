@@ -25,12 +25,14 @@ public class OopEmpWage {
         int wagePerHr = 20;
         int fullDayHr = 8;
         empcheck();
-        if(isPresent==1){
-            fullDayHr=8;
-        }
-        else {
-            fullDayHr=4;
-        }
+       switch (isPresent){
+           case 1:
+           fullDayHr=8;
+           break;
+           case 0:
+           fullDayHr=4;
+           break;
+       }
         int dailyWage = wagePerHr*fullDayHr;
         System.out.println("Daliywage is : "+dailyWage);
 
